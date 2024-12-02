@@ -35,7 +35,7 @@ const finalScoreElement = document.getElementById('final-score');
 let totalTyped = '';
 let currentCharIndex = 0;
 let errors = 0;
-let timeLeft = 60; // 60 seconds countdown
+let timeLeft = 30; // 60 seconds countdown
 let timerInterval;
 let typingStarted = false;
 let longText = generateLongText();
@@ -131,7 +131,7 @@ document.addEventListener('keydown', (e) => {
 // Reset the test
 function resetTest() {
     clearInterval(timerInterval);
-    timeLeft = 60;
+    timeLeft = 30;
     timerElement.textContent = `Time left: ${timeLeft}s`;
     finalScoreElement.textContent = '';
     textContainer.style.display = 'block';
