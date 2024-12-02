@@ -170,3 +170,5 @@ function showMobileMessage() {
 
 // Startup
 init();
+
+// maybe think about moving to react or view
